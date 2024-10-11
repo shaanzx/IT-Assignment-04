@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 24px;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  background-color: #903ee7;
+  margin-bottom: 20px;
+box-shadow: 1px 1px 16px black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+  margin-left: -120px;
+  transition: all 1.5s ease-in-out;
+}
+
+.icon {
+  font-size: 24px;
+  line-height: 50px;
+  
+}
+
+.button:hover {
+  margin-left: 0px;
+  transition: all 1.5s ease-in-out;
+}
+
+/* .button:hover .txt {
+  display: block;
+} */
