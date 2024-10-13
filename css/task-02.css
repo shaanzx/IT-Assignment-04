@@ -1,0 +1,39 @@
+.container{
+  background: linear-gradient(to right, #1e43e5, #037ef8);
+  margin: 0;
+  padding: 12px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;}
+
+.circle{
+  width: 400px;
+  height: 400px;
+  border-top: 24px solid red;
+  border-right: 24px solid #ffffff;
+  border-bottom: 24px solid white;
+  border-left: 24px solid white;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+#text{
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1.5s ease-in-out;
+}
+
+.circle:hover{
+  transform:  rotate(360deg);
+  transition: all 1.5s ease-in-out;
+  cursor: pointer;
+}
+
