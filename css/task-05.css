@@ -1,0 +1,55 @@
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 400vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slide-image 20s linear infinite 2s;
+  transform: translateX(-300vw);
+}
+
+.image {
+  width: 100vw;
+  height: 90vh;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide-image {
+  0%,
+  5% {
+    transform: translateX(-300vw);
+  }
+  15%,
+  20% {
+    transform: translateX(-200vw);
+  }
+  30%,
+  35% {
+    transform: translateX(-100vw);
+  }
+  45%,
+  50% {
+    transform: translateX(0);
+  }
+  60%,
+  65% {
+    transform: translateX(-100vw);
+  }
+  75%,
+  80% {
+    transform: translateX(-200vw);
+  }
+  90%,
+  95% {
+    transform: translateX(-300vw);
+  }
+}
